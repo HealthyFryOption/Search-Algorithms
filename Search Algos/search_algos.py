@@ -111,8 +111,8 @@ class Algo:
     class Uninformed:
         def depth_first_search(connected_graph):
             """
-                Parameter connected_graph is an iteratable cotaining other iterable(s). The element iterable has an element specifying 
-                its group distinguisher at index 0 (str recommended), followed by other elemenets or nodes belonging to the group. 
+                Parameter connected_graph is an iteratable cotaining other iterable(s). Each element iterable has an element specifying 
+                its group distinguisher at index 0 (str recommended), followed by the nodes belonging to the group. 
                 Returns [ result ] where all nodes of a group is combined together for a clearer picture of a connected graph.
             """
 
