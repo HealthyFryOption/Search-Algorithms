@@ -9,7 +9,7 @@ def warning(function):
             return index
 
         except TypeError:
-            print("Please provide a type target comparable with objects of a list")
+            print("Compatibility problem between types occured. Please check if target class can be compared with objects of iteratable given.")
 
             return None
 
