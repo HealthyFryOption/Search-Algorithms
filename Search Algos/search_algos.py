@@ -40,6 +40,29 @@ class Algo:
                     return i
             
             return None
+        
+        @warning
+        def linked_list_search(self, link_list_target:list, link_list_primary:list):
+
+            "Check whether link_list_target is contained inside link_list_primary"
+
+            link_list_target_len = len(link_list_target)
+
+            for index, nodeP in enumerate(link_list_primary):
+                if nodeP == link_list_target[0]:
+
+                    indexP = index
+
+                    for i in range(link_list_target_len):
+                        if link_list_primary[indexP] == link_list_target[i]:
+                            if i == (link_list_target_len - 1):
+                                return index
+
+                            indexP += 1
+                        else:
+                            break
+
+            return None
 
     class Sorted:
         @warning
